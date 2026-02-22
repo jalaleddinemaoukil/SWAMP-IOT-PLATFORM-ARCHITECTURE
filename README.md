@@ -6,17 +6,17 @@
 
 **SWAMP** (Smart Water & Agriculture Management Platform) is a full-stack IoT platform architecture demonstrating real-time sensor data ingestion, processing, and visualization at scale.
 
-> **📚 Purpose:** This repository showcases the **system design, architecture patterns, and infrastructure-as-code** for a production-grade IoT platform. Source code is proprietary and not included.
+> **Purpose:** This repository showcases the **system design, architecture patterns, and infrastructure-as-code** for a production-grade IoT platform. Source code is proprietary and not included.
 > 
-> **⚠️ Educational Use Only:** This documentation is for learning and portfolio purposes. Commercial use or implementation without permission is prohibited. See [LICENSE](./LICENSE) for details.
+> **Educational Use Only:** This documentation is for learning and portfolio purposes. Commercial use or implementation without permission is prohibited. See [LICENSE](./LICENSE) for details.
 
-## 🎯 Architecture Goals
+## Architecture Goals
 1.  **Real-time Data Processing:** Sub-500ms latency from sensor event to dashboard update
 2.  **Horizontal Scalability:** Support 10,000+ concurrent IoT device connections
 3.  **Multi-tenancy:** Secure data isolation using PostgreSQL Row Level Security
 4.  **Event-Driven Design:** Decoupled microservices using MQTT pub/sub pattern
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend & Visualization
 * **Core:** React 19, TypeScript, Vite,
@@ -35,7 +35,7 @@
 * **Scanning:** Trivy (Container Security), Gitleaks (Secret Detection)
 * **Compliance:** OWASP Dependency Check
 
-## 🏗 Architecture Overview
+## Architecture Overview
 
 ```mermaid
 graph LR
@@ -60,7 +60,7 @@ graph LR
 - WebSocket pushes real-time updates to the React dashboard
 - Zustand manages optimistic UI state
 
-👉 **[View detailed architecture diagrams](./assets/architecture-overview.md)**
+**[View detailed architecture diagrams](./assets/architecture-overview.md)**
 
 ## 📂 Repository Structure
 
@@ -81,7 +81,7 @@ swamp-iot-platform-architecture/
 └── README.md
 ```
 
-### 📖 Documentation Guide
+### Documentation Guide
 
 | Document | Focus Area | Best For |
 |----------|-----------|----------|
@@ -92,7 +92,7 @@ swamp-iot-platform-architecture/
 | [Engineering Challenges](./docs/05-engineering-challenges.md) | Performance optimization, concurrency | Senior/staff engineers |
 | [CI/CD Examples](./docs/CICD-INFRASTRUCTURE-EXAMPLES.md) | GitHub Actions, Terraform, Docker | Platform engineers |
 
-## 🚀 Technical Highlights
+## Technical Highlights
 
 ### Performance Optimizations
 - **Batched Writes:** Reduced database CPU from 80% → 30% using write buffering
@@ -114,7 +114,7 @@ swamp-iot-platform-architecture/
 - **Monitoring:** CloudWatch alarms for CPU, memory, 5XX errors
 - **Log Aggregation:** Centralized logging with CloudWatch Logs
 
-## 🛠️ Technologies Demonstrated
+## Technologies Demonstrated
 
 **Frontend:** React 18 • TypeScript 5 • Vite • Zustand • Tailwind CSS • Recharts  
 **Backend:** Supabase (PostgreSQL 15 • GoTrue Auth • Edge Functions) • Node.js  
@@ -123,7 +123,7 @@ swamp-iot-platform-architecture/
 **DevOps:** Terraform • Docker • GitHub Actions • Trivy • Gitleaks  
 **Deployment:** Vercel (frontend) • Supabase Cloud (backend) • AWS (MQTT bridge)
 
-## 📊 Architecture Metrics
+## Architecture Metrics
 
 - **Latency:** <500ms end-to-end (sensor → dashboard)
 - **Throughput:** 1000+ messages/second sustained
@@ -131,7 +131,7 @@ swamp-iot-platform-architecture/
 - **Uptime:** 99.7% availability (target: 99.9%)
 - **Database:** 10M+ sensor readings, partitioned by month
 
-## 🎓 Learning Resources
+## Learning Resources
 
 Study the architecture patterns demonstrated here:
 
@@ -141,7 +141,7 @@ Study the architecture patterns demonstrated here:
 
 > **Note:** These docs are for educational purposes only. You may study the patterns and concepts, but implementing a similar system for commercial use requires explicit permission.
 
-## 📝 License & Usage
+## License & Usage
 
 **License:** [CC BY-NC-ND 4.0](./LICENSE) (Attribution-NonCommercial-NoDerivatives)
 
